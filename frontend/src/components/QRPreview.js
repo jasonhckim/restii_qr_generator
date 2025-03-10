@@ -5,8 +5,10 @@ const QRPreview = ({ qrCodes }) => {
         <div style={styles.container}>
             {qrCodes.map(({ table, qrImage }) => (
                 <div key={table} style={styles.qrWrapper}>
-                    <img src={qrImage} alt={`Table ${table}`} style={styles.qrImage} />
-                    <p style={styles.tableText}>Table {table}</p>
+                    <div style={styles.qrBox}>
+                        <img src={qrImage} alt={`Table ${table}`} style={styles.qrImage} />
+                        <div style={styles.tableLabel}>Table {table}</div>
+                    </div>
                 </div>
             ))}
         </div>
@@ -23,8 +25,13 @@ const styles = {
     },
     qrWrapper: {
         textAlign: "center",
+    },
+    qrBox: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
         padding: "15px",
-        border: "2px solid black",
+        border: "4px solid black",
         borderRadius: "10px",
         boxShadow: "2px 2px 10px rgba(0,0,0,0.2)",
         backgroundColor: "#fff",
@@ -33,10 +40,17 @@ const styles = {
         width: "150px",
         height: "150px",
     },
-    tableText: {
-        fontSize: "16px",
+    tableLabel: {
+        marginTop: "5px",
+        padding: "5px",
+        backgroundColor: "white",
+        color: "black",
+        fontSize: "18px",
         fontWeight: "bold",
-        marginTop: "10px",
+        textAlign: "center",
+        width: "100px",
+        borderRadius: "5px",
+        border: "2px solid black",
     },
 };
 
