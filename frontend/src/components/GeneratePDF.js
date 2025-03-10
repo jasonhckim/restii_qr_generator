@@ -6,21 +6,24 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "center",
+        alignItems: "center",
         padding: 20,
         backgroundColor: "#fff",
     },
     qrContainer: {
-        width: "33%",
-        padding: 10,
+        width: "30%", // 3 QR codes per row
         textAlign: "center",
-        alignItems: "center",
+        marginBottom: 20,
+        padding: 10,
+        border: "1px solid #000", // Adds a border around each QR code
     },
     qrImage: {
         width: 100,
         height: 100,
     },
     tableText: {
-        fontSize: 12,
+        fontSize: 14,
+        fontWeight: "bold",
         marginTop: 5,
     },
 });
