@@ -1,36 +1,24 @@
-# Restii QR Generator
-
-A full-stack application for generating QR codes for restaurant tables. The app includes a backend for QR code generation and PDF export, and a frontend for previewing and downloading QR codes.
 
 ---
 
-## Features
+### **Why It Might Not Look Like Markdown**
+1. **Improper Copy-Paste**:
+   - Ensure you’re copying the **entire Markdown content** (including backticks and indentation).
+   - Avoid copying from a rendered view (e.g., GitHub preview). Copy directly from the raw text above.
 
-- **QR Code Generation**: Generate QR codes for restaurant tables with unique URLs.
-- **PDF Export**: Download QR codes as a PDF with a clean, printable layout.
-- **Frontend Preview**: Preview QR codes in a grid layout before downloading.
-- **CSV Export**: Export QR code URLs as a CSV file.
+2. **File Extension**:
+   - The file must be named `README.md` (not `README.txt` or `README`).
 
----
-
-## Technologies Used
-
-- **Backend**: Node.js, Express, Puppeteer, QRCode
-- **Frontend**: React, Vite, Axios
-- **Styling**: Inline CSS (React), Plain CSS (Puppeteer)
+3. **Markdown Rendering**:
+   - GitHub/GitLab renders Markdown automatically. If you’re viewing the file locally, use a Markdown viewer (e.g., VS Code, Typora) to see the formatted version.
 
 ---
 
-## Setup Instructions
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm (v8 or higher)
-
-### Installation
-
-1. **Clone the Repository**:
+### **Steps to Fix**
+1. Copy the **exact Markdown content above**.
+2. Save it as `README.md` in your repository’s root folder.
+3. Push to GitHub:
    ```bash
-   git clone https://github.com/jasonhckim/restii_qr_generator.git
-   cd restii_qr_generator
+   git add README.md
+   git commit -m "Fix README.md formatting"
+   git push origin main
