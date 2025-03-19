@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { generateQRCodes } from "./api";
 import QRPreview from "./components/QRPreview";
 import GeneratePDF from "./components/GeneratePDF"; // 🆕 Import PDF Component
+import App from './App';
 
 function App() {
     const [restaurantName, setRestaurantName] = useState("");
